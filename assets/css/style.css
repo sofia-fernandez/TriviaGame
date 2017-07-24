@@ -1,4 +1,14 @@
 .container {
 	font-family: courier new;
-	
+
+}
+
+#main_content {
+/* Do not display content by default */
+	display: none;
+}
+
+#done_content {
+/* Do not display content by default */
+	display: none;
 }
