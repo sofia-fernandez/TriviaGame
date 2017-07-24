@@ -28,7 +28,7 @@ Don't forget to include a countdown timer.
 //              2.3.1.3 Unanswered Questions 
 
 //DECLARE VARIABLES======================================
-var timer;
+var timer = new Date;
 var correctAnswers;
 var incorrectAnswers;
 var unansweredQuestions;
@@ -51,6 +51,22 @@ $(document).ready(
 // 2.2.1 The timer has a specific start time
 // 2.2.2 The timer has a specific end time
 // 2.2.3 Once the time reaches the end time, the user is presented to the Done page.
+
+//Test 1 Timer Code
+    //setInterval(function () {
+    //	$('#timer_content').text( "Time Remaining: " + (new Date - timer) / 1000 + " (seconds)");
+    //})
+
+//Test 2 Timer Code Reference: https://stackoverflow.com/posts/3089490/edit
+var counter = 60;
+var interval = setInterval(function() {
+    counter--;
+    // Display 'counter' wherever you want to display it.
+    if (counter == 0) {
+        // Display a login box
+        clearInterval(interval);
+    }
+}, 1000);
 
 
 	}
